@@ -6,7 +6,7 @@ require 'sinatra/activerecord'
 set :database, "sqlite3:barbershop.db" # создаем подключение к БД
 
 # создаем сущьность
-class Client < ActiveRecord::Base
+class Client < ActiveRecord::Base # < означает, что в нашем классе Client будут все методы ActiveRecord::Base(ActiveRecord - пространство имен, Base - базовый класс в пространстве времен) 
 
 end	
 
